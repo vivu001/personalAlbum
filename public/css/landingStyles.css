@@ -1,0 +1,19 @@
+.flexContainer {
+    display: flex;
+}
+.flexCenter {
+    justify-content: center;
+}
+.fullHeight {
+    height: 100vh;
+}
+.itemCenter {
+    align-items: center;
+}
+.fullHeight {
+    height: 100vh;
+}
+.centerImage {
+    background: url('/img/duesseldorf.jpg') center;
+    background-size: cover;
+}

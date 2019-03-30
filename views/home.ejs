@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+<div class="row">
+    <% posts.forEach((post, i) => { %>
+        <div class="col-2">
+            <img src="./img/banner.jpg" alt="">
+        </div>
+        <div class="col-10">
+            <h1><%= post.title %></h1>
+            <% if (post.content.length <= 80) { %>
+                <p><%= post.content %></p>
+            <% } else { %>
+                <p>
+                    <%= post.content.substring(0, 80) + "..." %>
+                    <a href="">Read more</a>
+                </p>
+            <% } %>
+        </div>
+    <% }) %>
+    <div class="col">
+        <a href="/compose">
+            <button type="button" class="btn btn-light">+</button>
+        </a>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
